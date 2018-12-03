@@ -197,17 +197,13 @@ DATASETS = {
         IM_DIR:
             _DATA_DIR + '/VOC2007/JPEGImages',
         ANN_FN:
-            _DATA_DIR + '/VOC2007/annotations/voc_2007_trainval.json',
-        DEVKIT_DIR:
-            _DATA_DIR + '/VOC2007/VOCdevkit2007'
+            _DATA_DIR + '/VOC2007/Annotations/VOC2007_train.json',
     },
     'voc_2007_test': {
         IM_DIR:
-            _DATA_DIR + '/VOC2007/JPEGImages',
+            _DATA_DIR + '/VOC2007_test/VOCdevkit2007/VOC2007/JPEGImages',
         ANN_FN:
-            _DATA_DIR + '/VOC2007/annotations/voc_2007_test.json',
-        DEVKIT_DIR:
-            _DATA_DIR + '/VOC2007/VOCdevkit2007'
+            _DATA_DIR + '/VOC2007_test/VOCdevkit2007/VOC2007/Annotations/VOC2007_test_2.json',
     },
     'voc_2012_trainval': {
         IM_DIR:

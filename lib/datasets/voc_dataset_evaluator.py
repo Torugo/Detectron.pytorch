@@ -62,6 +62,7 @@ def _write_voc_results_files(json_dataset, all_boxes, salt):
         'Image set path does not exist: {}'.format(image_set_path)
     with open(image_set_path, 'r') as f:
         image_index = [x.strip() for x in f.readlines()]
+        image_index = np.sort(image_index)
     # Sanity check that order of images in json dataset matches order in the
     # image set
     roidb = json_dataset.get_roidb()
